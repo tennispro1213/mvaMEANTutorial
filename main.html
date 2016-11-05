@@ -2,9 +2,12 @@
 <html>
   <head>
     <title>Chirp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="scripts/chirpApp.js"></script>
+    
   </head>
-  <body>
-    <div id='main'>
+  <body ng-app="chirpApp">
+    <div id='main' ng-controller="mainController">
       <form>
 	<input type="text" placeholder="Your name" />
 	<textarea required maxlength="200" rows="3" placeholder="Say something"></textarea>
